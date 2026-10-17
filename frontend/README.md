@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RD-AI-Dashboard — Frontend
+
+The frontend for **RD-AI-Dashboard**, an AI-powered BMW Sales Intelligence Dashboard designed to make business data exploration more intuitive.
+
+Built with Next.js, React, and TypeScript, this application provides the user interface for exploring AI-assisted analytics and data visualizations.
+
+## Features
+
+- Modern web interface built with Next.js
+- Responsive layout for dashboard experiences
+- TypeScript support for maintainable code
+- Designed to integrate with a Python backend
+- Intended for natural-language-driven sales analytics
+
+## Tech Stack
+
+- **Framework:** Next.js
+- **UI Library:** React
+- **Language:** TypeScript
+- **Styling:** CSS
+- **Package Manager:** npm
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Install [Node.js](https://nodejs.org/) and npm.
+
+### Installation
+
+From the frontend directory, run:
+
+```bash
+npm install
+```
+
+### Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can edit the application by modifying files in the `app/` directory. The development server refreshes the page as you make changes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+Check `package.json` for the scripts supported by this project. The standard Next.js development command is:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+frontend/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── favicon.ico
+├── public/
+├── package.json
+├── package-lock.json
+├── next.config.ts
+└── tsconfig.json
+```
 
-## Deploy on Vercel
+## Backend Integration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application is designed to work with the project's Python backend. Configure the backend URL and any required environment variables according to the actual application setup.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Never expose API keys or private credentials in frontend code.
+
+## Deployment
+
+The frontend can be deployed to a compatible Next.js hosting platform, such as [Vercel](https://vercel.com/), after configuring the required environment variables and backend connection.
+
+## Related Documentation
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+
+---
+
+Part of the **RD-AI-Dashboard** project.
